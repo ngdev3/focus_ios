@@ -28,20 +28,20 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function () {
-      window.plugins.OneSignal
-      .startInit("ddeebac2-bdd8-4e81-8f3d-75f6e45f0e1b")
-      .endInit();
+    //   window.plugins.OneSignal
+    //   .startInit("ddeebac2-bdd8-4e81-8f3d-75f6e45f0e1b")
+    //   .endInit();
       
-      window.plugins.OneSignal.getIds(function (ids) {
-        // alert(JSON.stringify(ids.userId))
-        // loading.active();
-        sessionStorage.tokenid= ids.userId;
-        // loading.deactive();
-    });
+    //   window.plugins.OneSignal.getIds(function (ids) {
+    //     // alert(JSON.stringify(ids.userId))
+    //     // loading.active();
+    //     sessionStorage.tokenid= ids.userId;
+    //     // loading.deactive();
+    // });
 
-    sessionStorage.u_ids = device.uuid;
-    sessionStorage.device_type = device.platform;
-    uuid = device.uuid;
+    // sessionStorage.u_ids = device.uuid;
+    // sessionStorage.device_type = device.platform;
+    // uuid = device.uuid;
 
     this.receivedEvent('deviceready');
         

@@ -63,7 +63,7 @@ app.controller('login', function ($scope, $http, $location, $cookieStore, model,
       //  alert(sessionStorage.tokenid)
         if(!sessionStorage.tokenid){
             alert('Device Token Not Generated Try Again')
-            $rootScope.initOneSignal()
+      //      $rootScope.initOneSignal()
             return false;
         }
         if ($scope[form].$error) {

@@ -3,17 +3,17 @@ app.controller('splash', function ($scope, $http, $location, $interval, $cookieS
     //$location.path('/login');
     $scope.season_fetch = function () {
        
-        $rootScope.initOneSignal();
+        // $rootScope.initOneSignal();
         //  alert('--------')
         setTimeout(function () {
             $scope.$apply(
                 function(){
 
                     $location.path('/login');
-                    $rootScope.initOneSignal();
-                    window.plugins.OneSignal
-                    .startInit(firebase)
-                    .endInit();
+                  //  $rootScope.initOneSignal();
+                    // window.plugins.OneSignal
+                    // .startInit(firebase)
+                    // .endInit();
                     
                 }
             )
