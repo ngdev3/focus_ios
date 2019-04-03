@@ -11,6 +11,7 @@ app.controller('splash', function ($scope, $http, $location, $interval, $cookieS
 
                     $location.path('/login');
                   //  $rootScope.initOneSignal();
+                  //admin@yopmail.com
                     // window.plugins.OneSignal
                     // .startInit(firebase)
                     // .endInit();
