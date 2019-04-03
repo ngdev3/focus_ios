@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.focus.androidapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.focus.androidapp" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>FocusApp</name>
     <description>
        A Software Team  From tekshapers Software solutions Pvt Ltd (By Hybrid Team - Rajat Gupta)
@@ -16,6 +18,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="https://youtube.com" />
     <icon src="res/playstore-icon.png" />
     <platform name="android">
         <allow-intent href="market:*" />
