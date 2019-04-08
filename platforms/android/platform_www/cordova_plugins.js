@@ -18,14 +18,6 @@ module.exports = [
     ]
   },
   {
-    "id": "onesignal-cordova-plugin.OneSignal",
-    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
-    "pluginId": "onesignal-cordova-plugin",
-    "clobbers": [
-      "OneSignal"
-    ]
-  },
-  {
     "id": "cordova-plugin-camera.Camera",
     "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
     "pluginId": "cordova-plugin-camera",
@@ -55,6 +47,38 @@ module.exports = [
     "pluginId": "cordova-plugin-camera",
     "clobbers": [
       "CameraPopoverHandle"
+    ]
+  },
+  {
+    "id": "cordova-plugin-file-transfer.FileTransferError",
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+    "pluginId": "cordova-plugin-file-transfer",
+    "clobbers": [
+      "window.FileTransferError"
+    ]
+  },
+  {
+    "id": "cordova-plugin-file-transfer.FileTransfer",
+    "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+    "pluginId": "cordova-plugin-file-transfer",
+    "clobbers": [
+      "window.FileTransfer"
+    ]
+  },
+  {
+    "id": "cordova-plugin-dialogs.notification",
+    "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+    "pluginId": "cordova-plugin-dialogs",
+    "merges": [
+      "navigator.notification"
+    ]
+  },
+  {
+    "id": "cordova-plugin-dialogs.notification_android",
+    "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+    "pluginId": "cordova-plugin-dialogs",
+    "merges": [
+      "navigator.notification"
     ]
   },
   {
@@ -231,51 +255,11 @@ module.exports = [
     "runs": true
   },
   {
-    "id": "cordova-plugin-file-transfer.FileTransferError",
-    "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
-    "pluginId": "cordova-plugin-file-transfer",
+    "id": "onesignal-cordova-plugin.OneSignal",
+    "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+    "pluginId": "onesignal-cordova-plugin",
     "clobbers": [
-      "window.FileTransferError"
-    ]
-  },
-  {
-    "id": "cordova-plugin-file-transfer.FileTransfer",
-    "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
-    "pluginId": "cordova-plugin-file-transfer",
-    "clobbers": [
-      "window.FileTransfer"
-    ]
-  },
-  {
-    "id": "card.io.cordova.mobilesdk.CardIO",
-    "file": "plugins/card.io.cordova.mobilesdk/www/cdv-plugin-card-io.js",
-    "pluginId": "card.io.cordova.mobilesdk",
-    "clobbers": [
-      "CardIO"
-    ]
-  },
-  {
-    "id": "com.paypal.cordova.mobilesdk.PayPalMobile",
-    "file": "plugins/com.paypal.cordova.mobilesdk/www/cdv-plugin-paypal-mobile-sdk.js",
-    "pluginId": "com.paypal.cordova.mobilesdk",
-    "clobbers": [
-      "PayPalMobile"
-    ]
-  },
-  {
-    "id": "cordova-plugin-dialogs.notification",
-    "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-    "pluginId": "cordova-plugin-dialogs",
-    "merges": [
-      "navigator.notification"
-    ]
-  },
-  {
-    "id": "cordova-plugin-dialogs.notification_android",
-    "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
-    "pluginId": "cordova-plugin-dialogs",
-    "merges": [
-      "navigator.notification"
+      "OneSignal"
     ]
   }
 ];
@@ -284,13 +268,11 @@ module.exports.metadata =
 {
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-network-information": "2.0.1",
-  "onesignal-cordova-plugin": "2.4.6",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-plugin-file": "6.0.1",
   "cordova-plugin-file-transfer": "1.7.1",
-  "card.io.cordova.mobilesdk": "2.1.0",
-  "com.paypal.cordova.mobilesdk": "3.5.0",
-  "cordova-plugin-dialogs": "2.0.1"
+  "cordova-plugin-dialogs": "2.0.1",
+  "cordova-plugin-file": "6.0.1",
+  "onesignal-cordova-plugin": "2.4.6"
 };
 // BOTTOM OF METADATA
 });
